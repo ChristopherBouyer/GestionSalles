@@ -25,7 +25,7 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => 'required|unique:users',
-            'badge' => 'integer',
+            'badge' => 'required|unique:users|max:25',
         ]);
 
         $newuser = User::create([
@@ -63,4 +63,3 @@ class UserController extends Controller
         return redirect('/user')->with('success', 'Utilisateur supprimé avec succès!');
     }
 }
-

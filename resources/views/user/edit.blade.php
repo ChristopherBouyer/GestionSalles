@@ -11,7 +11,7 @@
         <input type="text" name="name" value="{{ $user->name }}" required>
 
         <label for="badge">Badge:</label>
-        <input type="number" name="badge" value="{{ $user->badge }}">
+        <input type="text" name="badge" value="{{ $user->badge }}">
 
         <button type="submit">Mettre à jour</button>
     </form>

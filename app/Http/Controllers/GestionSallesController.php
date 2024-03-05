@@ -26,11 +26,13 @@ class GestionSallesController extends Controller
     {
         $request->validate([
             'nom' => 'required|unique:salles',
+            'system_id' => 'required|unique:salles',
             'max_user' => 'required|integer|min:1',
         ]);
 
         Salle::create([
             'nom' => $request->nom,
+            'system_id' => $request->system_id,
             'max_user' => $request->max_user,
             'actual_user' => 0
         ]);
@@ -65,4 +67,3 @@ class GestionSallesController extends Controller
         return redirect('/')->with('success', 'Salle supprimée avec succès!');
     }
 }
-

@@ -10,4 +10,9 @@ class User extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'badge'];
+
+    public function salles()
+    {
+        return $this->belongsToMany(Salle::class, 'user_salle', 'user_id', 'salle_id');
+    }
 }

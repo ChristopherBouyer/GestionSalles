@@ -9,7 +9,7 @@
         <input type="text" name="name" required>
         
         <label for="badge">Badge:</label>
-        <input type="number" name="badge">
+        <input type="text" name="badge" required>
 
         <button type="submit" class="btn btn-success">Créer</button>
     </form>

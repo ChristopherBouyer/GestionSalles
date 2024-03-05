@@ -21,6 +21,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
+
 Route::get('/', [GestionSallesController::class, 'index'])->name('gestion-salles.index');
 
 Route::get('/gestion-salles/create', [GestionSallesController::class, 'create'])->name('gestion-salles.create');
@@ -40,4 +41,4 @@ Route::get('/user/{user}/edit', [UserController::class, 'edit'])->name('user.edi
 Route::put('/user/{user}', [UserController::class, 'update'])->name('user.update');
 Route::delete('/user/{user}', [UserController::class, 'destroy'])->name('user.destroy');
 
-Route::get('/apirequest', [ApiController::class, 'index']);
+Route::post('/apirequest', [ApiController::class, 'index']);
