@@ -1,0 +1,83 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #007bff;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* List Styles */
+ul {
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Success Message */
+.success {
+    color: #28a745;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+}
